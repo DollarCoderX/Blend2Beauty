@@ -15,19 +15,19 @@ const EASE = [0.22, 1, 0.36, 1] as const;
  */
 const videos = [
   {
-    src: '',
+    src: 'https://files.catbox.moe/1qlivo.mp4',
     poster: posterImg1,
     title: 'Bridal Transformation',
     tag: 'Bridal',
   },
   {
-    src: '',
+    src: 'https://files.catbox.moe/nf1bsn.mp4',
     poster: posterImg2,
     title: 'Behind the Brush',
     tag: 'Studio',
   },
   {
-    src: '',
+    src: 'https://files.catbox.moe/g8f8gd.mp4',
     poster: posterImg3,
     title: 'Editorial Session',
     tag: 'Editorial',
