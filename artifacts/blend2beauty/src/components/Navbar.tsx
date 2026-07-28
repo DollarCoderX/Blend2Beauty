@@ -38,23 +38,25 @@ export default function Navbar() {
 
   return (
     <>
+      <div className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4 lg:px-8 pointer-events-none">
       <motion.nav
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.9, ease: EASE_IOS }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? 'py-3'
-            : 'py-5'
-        }`}
-        style={scrolled ? {
-          background: 'rgba(13,11,10,0.72)',
+        className="w-full max-w-6xl pointer-events-auto transition-all duration-500"
+        style={{
+          background: scrolled ? 'rgba(13,11,10,0.82)' : 'rgba(13,11,10,0.55)',
           backdropFilter: 'blur(28px) saturate(160%)',
           WebkitBackdropFilter: 'blur(28px) saturate(160%)',
-          boxShadow: '0 1px 0 rgba(200,169,106,0.08)',
-        } : {}}
+          borderRadius: '9999px',
+          border: '1px solid rgba(200,169,106,0.12)',
+          boxShadow: scrolled
+            ? '0 8px 32px rgba(0,0,0,0.45), 0 1px 0 rgba(200,169,106,0.1)'
+            : '0 4px 24px rgba(0,0,0,0.3)',
+          padding: scrolled ? '10px 24px' : '14px 24px',
+        }}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <a
             href="#home"
@@ -113,6 +115,7 @@ export default function Navbar() {
           </button>
         </div>
       </motion.nav>
+      </div>
 
       {/* Mobile overlay */}
       <AnimatePresence>

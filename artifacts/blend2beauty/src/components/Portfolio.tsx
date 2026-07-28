@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import img1 from '@assets/Canva_Editable_Price_List_Template___Makeup_Services_1785225414430.jpg';
-import img2 from '@assets/How_to_Design_a_High_Conversion_Landing_Page_1785225415522.jpg';
-import img3 from '@assets/Makeup_–_Just_another_Starter_Templates_Sites_site_1785225418716.jpg';
-import img4 from '@assets/Screenshot_2026-07-28_082154_1785225576683.jpg';
+import img1 from '@assets/IMG-20260728-WA0011_1785233535361.jpg';
+import img2 from '@assets/IMG-20260728-WA0023_1785233536754.jpg';
+import img3 from '@assets/generated_images/portfolio-1.jpg';
+import img4 from '@assets/generated_images/portfolio-2.jpg';
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const images = [
-  { src: img1, alt: 'Signature bridal glam makeup — Blend2Beauty Lagos', label: 'Bridal Editorial' },
-  { src: img2, alt: 'Editorial beauty makeup by Blend2Beauty', label: 'Beauty Campaign' },
-  { src: img3, alt: 'Luxury beauty session — Blend2Beauty Studio', label: 'Studio Session' },
-  { src: img4, alt: 'Skincare and cosmetics artistry — Blend2Beauty', label: 'Cosmetics Art' },
+  { src: img1, alt: 'Traditional bridal glam — Blend2Beauty Lagos', label: 'Traditional Bridal' },
+  { src: img2, alt: 'Coral bridal beauty — Blend2Beauty Studio', label: 'Coral Bridal' },
+  { src: img3, alt: 'Signature bridal glam makeup — Blend2Beauty Lagos', label: 'Bridal Editorial' },
+  { src: img4, alt: 'Editorial beauty makeup by Blend2Beauty', label: 'Beauty Campaign' },
 ];
 
 export default function Portfolio() {

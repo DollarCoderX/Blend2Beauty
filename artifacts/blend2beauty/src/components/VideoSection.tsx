@@ -1,41 +1,33 @@
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause } from 'lucide-react';
-import posterImg1 from '@assets/Canva_Editable_Price_List_Template___Makeup_Services_1785225414430.jpg';
-import posterImg2 from '@assets/How_to_Design_a_High_Conversion_Landing_Page_1785225415522.jpg';
-import posterImg3 from '@assets/Makeup_–_Just_another_Starter_Templates_Sites_site_1785225418716.jpg';
+import posterImg1 from '@assets/IMG-20260728-WA0011_1785233535361.jpg';
+import posterImg2 from '@assets/IMG-20260728-WA0023_1785233536754.jpg';
+import posterImg3 from '@assets/generated_images/portfolio-3.jpg';
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 /*
- * FREE OPEN-SOURCE VIDEOS from Google's public media bucket.
- * These are Creative Commons / open-source sample videos.
- *
- * ╔══════════════════════════════════════════════════════════╗
- * ║  HOW TO REPLACE WITH YOUR OWN VIDEOS                   ║
- * ║  1. Upload your .mp4 files anywhere (e.g. Cloudinary,  ║
- * ║     Google Drive public link, your own server)         ║
- * ║  2. Copy each video's direct URL (must end in .mp4)    ║
- * ║  3. Replace the `src` values in the `videos` array     ║
- * ║     below with your URLs                               ║
- * ║  4. Update `poster` to a screenshot from your video    ║
- * ╚══════════════════════════════════════════════════════════╝
+ * TO ADD YOUR OWN VIDEOS:
+ * 1. Upload your .mp4 files (e.g. to Cloudinary or Google Drive public link)
+ * 2. Replace the empty `src` strings below with your direct video URLs
+ * 3. The `poster` images are already set to your real photos
  */
 const videos = [
   {
-    src: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    src: '',
     poster: posterImg1,
     title: 'Bridal Transformation',
     tag: 'Bridal',
   },
   {
-    src: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    src: '',
     poster: posterImg2,
     title: 'Behind the Brush',
     tag: 'Studio',
   },
   {
-    src: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+    src: '',
     poster: posterImg3,
     title: 'Editorial Session',
     tag: 'Editorial',
@@ -77,7 +69,7 @@ function VideoCard({ video, index }: { video: typeof videos[0]; index: number })
     >
       <video
         ref={videoRef}
-        src={video.src}
+        {...(video.src ? { src: video.src } : {})}
         poster={video.poster}
         muted
         loop
