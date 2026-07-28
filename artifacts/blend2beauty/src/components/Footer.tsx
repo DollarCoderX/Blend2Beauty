@@ -57,7 +57,7 @@ export default function Footer() {
                 <Instagram size={16} strokeWidth={1.5} />
               </a>
               <a
-                href="https://wa.me/234080836578239"
+                href="https://wa.me/23408036578239"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -127,13 +127,13 @@ export default function Footer() {
                   onMouseEnter={e => (e.currentTarget.style.color = 'var(--b2b-cream)')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'var(--b2b-muted)')}
                 >
-                  080836578239
+                  08036578239
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={15} strokeWidth={1.5} style={{ color: 'var(--b2b-gold)' }} />
                 <a
-                  href="mailto:hello@blend2beauty.com"
+                  href="mailto:blessing4ril13@gmail.com"
                   className="font-ui font-light text-sm transition-colors duration-200"
                   style={{ color: 'var(--b2b-muted)' }}
                   onMouseEnter={e => (e.currentTarget.style.color = 'var(--b2b-cream)')}
