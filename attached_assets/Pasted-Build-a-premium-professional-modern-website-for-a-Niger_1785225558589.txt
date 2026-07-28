@@ -1,0 +1,515 @@
+Build a premium, professional, modern website for a Nigerian makeup studio called "Blend2Beauty", based in Lagos, Nigeria.
+
+IMPORTANT:
+I will attach 4 reference design images to this project. Study them carefully and use them as visual inspiration for the website's layout, typography, composition, image treatment, spacing, section structure, and overall luxury beauty aesthetic.
+
+I will also provide:
+- 2 additional images for the website
+- 5 videos for the website
+
+Use the uploaded images and videos as the actual visual content of the site where appropriate. Do not replace them with random stock images if the provided assets are available.
+
+The website should feel like a high-end professional beauty brand, NOT childish, cartoonish, overly colorful, or template-like.
+
+The overall design direction should combine:
+
+- Premium beauty studio aesthetic
+- Editorial fashion/makeup photography
+- Minimal luxury
+- Modern iOS-inspired UI principles
+- Smooth glassmorphism used subtly and tastefully
+- Large rounded corners
+- Clean typography
+- Soft depth and shadows
+- Elegant micro-interactions
+- Smooth scrolling
+- Cinematic storytelling
+- High-quality animations
+- Premium responsive design
+- Excellent mobile experience
+
+The website should feel like something a serious premium makeup studio in Lagos would actually use to attract clients and receive bookings.
+
+Do NOT blindly copy the reference images. Take inspiration from their visual language and create a unique, cohesive Blend2Beauty brand experience.
+
+--------------------------------------------------
+BRAND
+--------------------------------------------------
+
+Brand name:
+Blend2Beauty
+
+Location:
+Lagos, Nigeria
+
+Business type:
+Professional makeup studio / makeup artist
+
+The website should communicate:
+- Professionalism
+- Beauty
+- Confidence
+- Elegance
+- Personal transformation
+- Trust
+- Luxury
+- Attention to detail
+
+Use the actual Blend2Beauty business information I provide in the project.
+
+If verified information about the business is available, use it carefully. Do not invent fake awards, fake testimonials, fake clients, fake statistics, fake certifications, or fake achievements.
+
+If information is missing, create elegant placeholder content that is clearly easy to replace later.
+
+--------------------------------------------------
+CORE DESIGN DIRECTION
+--------------------------------------------------
+
+Create a visual identity inspired by premium beauty editorials and modern Apple/iOS design.
+
+Think:
+"Apple-level simplicity meets luxury beauty editorial."
+
+The interface should be extremely clean.
+
+Use:
+- Large visual hierarchy
+- Generous whitespace
+- Elegant typography
+- Subtle glass panels
+- Soft translucent surfaces
+- Rounded UI elements
+- Smooth hover effects
+- Scroll-based animation
+- Image reveal animations
+- Text reveal animations
+- Gentle parallax
+- Smooth section transitions
+- Subtle blur effects
+- Premium button interactions
+
+Do NOT overuse glassmorphism.
+
+Do NOT make everything float.
+
+Do NOT add unnecessary glowing neon effects.
+
+Do NOT use excessive gradients.
+
+Do NOT use childish animations.
+
+Do NOT make the website look like a gaming website.
+
+The animations should feel sophisticated, slow, intentional, and premium.
+
+--------------------------------------------------
+HERO SECTION
+--------------------------------------------------
+
+Create a cinematic hero section that immediately communicates the Blend2Beauty brand.
+
+Use one of the provided images or videos as the main visual hero media.
+
+The hero should have:
+
+- Blend2Beauty branding
+- A strong headline
+- A short, elegant supporting statement
+- Primary CTA: "Book an Appointment"
+- Secondary CTA: "Explore Our Work"
+
+The hero should feel like a luxury editorial campaign.
+
+Example storytelling direction:
+
+"Beauty, Blended With Intention."
+
+or
+
+"Where Your Beauty Becomes Your Signature."
+
+Create an original headline that fits the brand.
+
+Use subtle entrance animations.
+
+The main visual should have a sophisticated image/video reveal.
+
+On desktop, consider a large split-screen or immersive full-width layout.
+
+On mobile, make the hero feel cinematic without becoming overwhelming.
+
+--------------------------------------------------
+STORYTELLING
+--------------------------------------------------
+
+The website should tell a story as the user scrolls.
+
+Do not simply create:
+Hero → Services → Contact.
+
+Instead, create a visual journey.
+
+Suggested narrative:
+
+1. INTRODUCTION
+Introduce Blend2Beauty and its philosophy.
+
+2. THE EXPERIENCE
+Explain what it feels like to work with Blend2Beauty.
+
+3. THE TRANSFORMATION
+Show the artistry and transformation through high-quality imagery and video.
+
+4. SERVICES
+Present makeup services in a premium, easy-to-understand layout.
+
+5. PORTFOLIO
+Showcase the work through images and videos.
+
+6. WHY BLEND2BEAUTY
+Explain what makes the studio special.
+
+7. TESTIMONIALS
+Create a section for real client testimonials.
+Use placeholders only if real testimonials have not been provided.
+
+8. BOOKING
+Create a strong final CTA encouraging visitors to book.
+
+The scrolling experience should feel like the visitor is moving through a beauty campaign rather than scrolling through a basic business website.
+
+--------------------------------------------------
+SERVICES
+--------------------------------------------------
+
+Create a beautiful services section.
+
+Include service cards with:
+- Service name
+- Short description
+- Duration, if provided
+- Price, if provided
+- Booking CTA
+
+Make the cards interactive.
+
+Use subtle hover animations.
+
+Do not invent service prices.
+
+If no pricing data is provided, create editable placeholders.
+
+The design should be inspired by the makeup price-list reference image I attached, but redesigned into a modern website component.
+
+--------------------------------------------------
+PORTFOLIO / GALLERY
+--------------------------------------------------
+
+Create a premium portfolio section.
+
+Use the 2 images I provide.
+
+Create an editorial-style gallery rather than a basic grid.
+
+Possible layouts:
+- Masonry-inspired layout
+- Large featured image
+- Smaller supporting images
+- Horizontal scrolling gallery
+- Full-screen image viewer
+
+Add smooth image reveal animations.
+
+When an image is clicked, open a premium lightbox/modal with:
+- Large image
+- Smooth transition
+- Close button
+- Previous/next navigation if applicable
+
+--------------------------------------------------
+VIDEO EXPERIENCE
+--------------------------------------------------
+
+I will provide 5 videos.
+
+Build a dedicated video section that showcases the videos beautifully.
+
+The videos should not simply appear as five boring rectangular boxes.
+
+Create an immersive layout such as:
+- Large featured video
+- Smaller video previews
+- Horizontal video carousel
+- Editorial video cards
+
+Videos should:
+- Autoplay only when appropriate and muted
+- Have controls when needed
+- Be optimized for performance
+- Work properly on mobile
+- Pause when not visible where appropriate
+
+Use smooth transitions when switching between videos.
+
+If the videos are portrait format, design the section around portrait video composition rather than forcing them into landscape containers.
+
+--------------------------------------------------
+BOOKING EXPERIENCE
+--------------------------------------------------
+
+Create a clear and premium booking flow.
+
+The main CTA throughout the site should be:
+
+"Book an Appointment"
+
+The booking section should include:
+- Client name
+- Email
+- Phone number
+- Desired service
+- Preferred date
+- Preferred time
+- Optional message
+
+Add a clear confirmation state after submission.
+
+Make the form visually premium and easy to use.
+
+If no backend/database is currently configured, build the frontend form structure so it can easily be connected to a backend later.
+
+Do not pretend that a booking has been successfully submitted if no backend exists.
+
+--------------------------------------------------
+NAVIGATION
+--------------------------------------------------
+
+Create a modern navigation bar.
+
+Desktop:
+- Blend2Beauty logo/wordmark
+- Home
+- About
+- Services
+- Portfolio
+- Experience
+- Contact
+- Book Now CTA
+
+Mobile:
+Create a beautiful iOS-inspired menu experience.
+
+The mobile menu should animate smoothly into view.
+
+The navigation should become slightly translucent or glass-like when scrolling, while remaining readable.
+
+--------------------------------------------------
+ABOUT / BRAND STORY
+--------------------------------------------------
+
+Create a premium About section that feels personal and authentic.
+
+Do not write generic AI-style text such as:
+"We are passionate about making women feel beautiful."
+
+Instead, write refined storytelling that communicates artistry, confidence, precision, and the experience of being transformed.
+
+The copy should be concise, emotional, and sophisticated.
+
+If the actual story or founder information is provided, prioritize that information.
+
+--------------------------------------------------
+VISUAL STYLE
+--------------------------------------------------
+
+Color direction:
+
+Use a sophisticated beauty palette inspired by the reference images.
+
+Possible direction:
+- Warm ivory
+- Soft cream
+- Champagne
+- Nude
+- Warm beige
+- Deep charcoal
+- Soft black
+
+Keep the palette restrained.
+
+The website should feel premium and timeless.
+
+Typography:
+Use an elegant serif display font for major headings and a clean modern sans-serif for body text and UI.
+
+Typography should have strong hierarchy.
+
+Avoid excessive font combinations.
+
+--------------------------------------------------
+ANIMATIONS
+--------------------------------------------------
+
+Use animations thoughtfully.
+
+Include:
+- Smooth page-load sequence
+- Hero text reveal
+- Image fade/reveal
+- Scroll-triggered animations
+- Subtle parallax
+- Hover interactions
+- Button micro-interactions
+- Section transitions
+- Smooth navigation
+- Video transitions
+- Lightbox animations
+
+Animations must be:
+- Smooth
+- Fast enough to feel responsive
+- Elegant
+- Professional
+
+Respect prefers-reduced-motion accessibility settings.
+
+Do not animate everything simultaneously.
+
+--------------------------------------------------
+3D / DEPTH
+--------------------------------------------------
+
+Use subtle depth and 3D-inspired interactions where appropriate.
+
+For example:
+- Slight image tilt on hover
+- Layered image compositions
+- Floating UI cards
+- Subtle depth transitions
+
+Keep it sophisticated.
+
+The goal is premium depth, not a flashy 3D demo.
+
+--------------------------------------------------
+RESPONSIVENESS
+--------------------------------------------------
+
+The website must be fully responsive.
+
+Optimize specifically for:
+- Desktop
+- Laptop
+- Tablet
+- Mobile phones
+
+The mobile version must not simply be a compressed desktop version.
+
+Redesign layouts where necessary for smaller screens.
+
+Pay special attention to:
+- Typography scaling
+- Video sizing
+- Navigation
+- Touch targets
+- Image cropping
+- Booking forms
+- Performance
+
+--------------------------------------------------
+TECHNICAL REQUIREMENTS
+--------------------------------------------------
+
+Use a modern, maintainable frontend architecture.
+
+Prefer:
+- React
+- TypeScript
+- Tailwind CSS or another clean styling system
+- Framer Motion or an appropriate animation library
+
+Use reusable components.
+
+Keep the code organized.
+
+Create components for:
+- Navbar
+- Hero
+- About
+- Story sections
+- Services
+- Portfolio
+- Video gallery
+- Testimonials
+- Booking form
+- Footer
+
+Use semantic HTML.
+
+Implement:
+- SEO metadata
+- Open Graph metadata
+- Accessible buttons
+- Keyboard navigation
+- Proper image alt text
+- Responsive design
+- Reduced motion support
+
+Optimize images and videos for performance.
+
+Use lazy loading where appropriate.
+
+Do not add unnecessary dependencies.
+
+--------------------------------------------------
+IMPORTANT CONTENT RULES
+--------------------------------------------------
+
+Do not invent:
+- Fake reviews
+- Fake awards
+- Fake statistics
+- Fake certifications
+- Fake client names
+- Fake partnerships
+
+If information is missing, use clearly marked editable placeholder content.
+
+Do not use lorem ipsum in the final polished design.
+
+The website should feel ready for a real business, while keeping unknown information easy to replace.
+
+--------------------------------------------------
+FINAL QUALITY BAR
+--------------------------------------------------
+
+The final result should feel like a premium custom-designed website, not a generic AI-generated template.
+
+The first impression should be:
+
+"Wow, this is a serious luxury makeup brand."
+
+The design should be:
+- Clean
+- Sophisticated
+- Minimal
+- Editorial
+- Modern
+- Premium
+- Feminine without being childish
+- Visually immersive
+- Highly polished
+
+The website should combine the visual inspiration from the reference images I attached with a modern iOS-inspired interface and cinematic storytelling.
+
+Prioritize visual quality, spacing, typography, responsive behavior, and animation quality.
+
+Before finishing, review the entire site and remove anything that looks:
+- Generic
+- Cluttered
+- Childish
+- Overdesigned
+- Inconsistent
+- Unnecessary
+
+Make the final result feel like a real premium Lagos beauty brand with a strong digital presence.

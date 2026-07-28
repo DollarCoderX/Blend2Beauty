@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Blend2Beauty"
+version = "1.0.0"
+id = "artifacts/blend2beauty"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24927
+
+[services.development]
+run = "pnpm --filter @workspace/blend2beauty run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/blend2beauty", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/blend2beauty/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24927"
+BASE_PATH = "/"
