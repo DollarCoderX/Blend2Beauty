@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
@@ -25,6 +26,7 @@ function App() {
         </WouterRouter>
         <Toaster />
       </TooltipProvider>
+      <Analytics />
     </QueryClientProvider>
   );
 }
