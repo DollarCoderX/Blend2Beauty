@@ -16,7 +16,7 @@ const features = [
   {
     icon: Sparkles,
     title: 'The Reveal',
-    description: 'We don't just hand you a mirror. We hand you a new perspective on yourself.',
+    description: "We don't just hand you a mirror. We hand you a new perspective on yourself.",
   },
 ];
 
