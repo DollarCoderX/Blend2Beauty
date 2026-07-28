@@ -1,84 +1,108 @@
-import { motion, useInView, useReducedMotion } from 'framer-motion';
-import { useRef } from 'react';
-import { Sparkles, Award, Globe, Heart } from 'lucide-react';
+import { motion } from 'framer-motion';
 
-const features = [
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const reasons = [
   {
-    icon: Sparkles,
+    num: '01',
     title: '100% Custom',
-    description: 'No two clients leave looking the same. Every look is built from scratch for your features.',
+    body: 'No two clients leave looking the same. Every look is architected for your face, occasion, and vision.',
   },
   {
-    icon: Award,
+    num: '02',
     title: 'Studio-Grade Tools',
-    description: 'Professional makeup only. The same products used on runways and magazine covers.',
+    body: 'The exact products used on runways, magazine covers, and fashion campaigns — in your session.',
   },
   {
-    icon: Globe,
+    num: '03',
     title: 'Lagos-Based, World-Inspired',
-    description: 'Our techniques draw from global editorial and beauty traditions.',
+    body: 'Our techniques draw from global editorial and luxury beauty traditions, expressed through a Lagos lens.',
   },
   {
-    icon: Heart,
-    title: 'Your Comfort Comes First',
-    description: 'From consultation to reveal, the experience is designed around you.',
+    num: '04',
+    title: 'Your Comfort First',
+    body: 'From consultation to reveal, every step of the experience is designed around you — not a formula.',
   },
 ];
 
 export default function WhySection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
-  const shouldReduceMotion = useReducedMotion();
-
   return (
-    <section
-      id="why"
-      ref={ref}
-      className="py-24 lg:py-32 bg-[var(--color-cream)]"
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="why" style={{ background: 'var(--b2b-void)', padding: '120px 0' }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: shouldReduceMotion ? 0 : 0.8 }}
-          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.9, ease: EASE }}
+          className="max-w-2xl mb-20"
         >
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-dark)] mb-4">
-            Why Blend2Beauty
-          </h2>
-          <p className="text-[var(--color-charcoal)]/70 text-lg font-light max-w-2xl mx-auto">
-            Every detail matters when your face is the canvas
+          <p className="font-ui text-xs tracking-[0.2em] uppercase mb-5" style={{ color: 'var(--b2b-gold)' }}>
+            Why Us
           </p>
+          <h2
+            className="font-display leading-[1.05]"
+            style={{ fontSize: 'clamp(2.6rem, 5vw, 4.5rem)', fontWeight: 300, color: 'var(--b2b-cream)' }}
+          >
+            What Makes Blend2Beauty{' '}
+            <em style={{ color: 'var(--b2b-gold)', fontStyle: 'italic' }}>Different</em>
+          </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{
-                  duration: shouldReduceMotion ? 0 : 0.6,
-                  delay: shouldReduceMotion ? 0 : index * 0.1,
-                }}
-                className="text-center space-y-4"
-                data-testid={`feature-${index}`}
+        {/* Reasons grid */}
+        <div className="grid md:grid-cols-2 gap-px" style={{ background: 'rgba(200,169,106,0.06)', borderRadius: '32px', overflow: 'hidden' }}>
+          {reasons.map((r, i) => (
+            <motion.div
+              key={r.num}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, delay: i * 0.1, ease: EASE }}
+              className="p-10 lg:p-12 group"
+              style={{ background: 'var(--b2b-void)' }}
+            >
+              <div className="flex items-start gap-5 mb-6">
+                <span
+                  className="font-display text-5xl font-light leading-none shrink-0 transition-colors duration-300"
+                  style={{ color: 'rgba(200,169,106,0.2)' }}
+                >
+                  {r.num}
+                </span>
+              </div>
+              <h3
+                className="font-display text-2xl lg:text-3xl font-light mb-4"
+                style={{ color: 'var(--b2b-cream)' }}
               >
-                <div className="w-16 h-16 mx-auto rounded-full bg-[var(--color-champagne)]/10 flex items-center justify-center">
-                  <Icon className="text-[var(--color-champagne)]" size={32} />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-[var(--color-dark)]">
-                  {feature.title}
-                </h3>
-                <p className="text-[var(--color-charcoal)]/70 leading-relaxed font-light">
-                  {feature.description}
-                </p>
-              </motion.div>
-            );
-          })}
+                {r.title}
+              </h3>
+              <p className="font-ui font-light leading-relaxed" style={{ color: 'var(--b2b-muted)' }}>
+                {r.body}
+              </p>
+            </motion.div>
+          ))}
         </div>
+
+        {/* Bottom pull quote */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, delay: 0.3, ease: EASE }}
+          className="mt-20 text-center max-w-3xl mx-auto"
+        >
+          <p
+            className="font-display font-light leading-tight"
+            style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', color: 'var(--b2b-cream)' }}
+          >
+            "The first thing a client says after the reveal is never{' '}
+            <em style={{ color: 'var(--b2b-gold)' }}>'I love it.'</em>{' '}
+            It's always{' '}
+            <em style={{ color: 'var(--b2b-gold)' }}>'Is that really me?'</em>"
+          </p>
+          <p className="font-ui text-xs tracking-[0.18em] uppercase mt-6" style={{ color: 'var(--b2b-muted)' }}>
+            Blend2Beauty Studio
+          </p>
+        </motion.div>
       </div>
     </section>
   );
